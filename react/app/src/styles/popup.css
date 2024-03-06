@@ -1,0 +1,72 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.popup {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.popup-inner {
+  animation: 0.4s cubic-bezier(0, 1.5, 0.5, 0.99) 0s 1 slideInFromLeft;
+
+  margin-top: 20px;
+  position: relative;
+  padding: 20px 32px;
+  width: 300px;
+  background-color: white;
+
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.popupAccent {
+  background-color: rgb(224, 146, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50px;
+
+  transition: 0.2s;
+}
+
+.popup-inner .close-btn:hover {
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.popupTitle {
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: -5px;
+  font-size: 18px;
+}
+.popupMessage {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+}

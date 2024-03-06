@@ -1,0 +1,120 @@
+.gameModeContainerFull {
+  padding: 50px 25px;
+  padding-top: 100px;
+}
+
+.gameModeContainer img {
+  height: 300px;
+}
+@media only screen and (max-width: 800px) {
+  .gameModeContainerFull {
+    padding-bottom: 30px;
+    padding-top: 50px;
+  }
+  .gameModeContainerFull .column111 {
+    display: grid !important;
+  }
+  .gameModeContainer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .gameModeContainer img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*-----------------------------------------------------*/
+
+.NrmsTimeline {
+  height: 100%;
+  width: 2px;
+  opacity: 0.2;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    133deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  left: 50px;
+  margin-top: -20px;
+}
+.NrmsTimelineContainer {
+  position: absolute;
+  width: calc(100% - 50px);
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 150px);
+}
+.NTimelineContainer1,
+.NTimelineContainer2 {
+  width: 100%;
+  margin-bottom: -100px;
+  display: flex;
+}
+.NTimelineContainer1 {
+  justify-content: flex-start;
+}
+.NTimelineContainer2 {
+  justify-content: flex-end;
+}
+.timelineContainer {
+  width: calc(50% - 100px);
+}
+.timelineParagraph {
+  margin-top: 10px;
+}
+.timelineIndicatorCircle {
+  position: absolute;
+  right: -7.5px;
+  top: -7.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: rgb(73, 73, 73);
+}
+
+.timelineIndicator {
+  position: absolute;
+  right: -100px;
+  height: 2px;
+  top: 50px;
+  width: 100px;
+  background-color: rgb(73, 73, 73);
+}
+.NTimelineContainer2 .timelineIndicator {
+  left: -100px;
+}
+.NTimelineContainer2 .timelineIndicatorCircle {
+  left: -7.5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .NrmsTimelineContainer {
+    justify-content: flex-start;
+  }
+  .NTimelineContainer1,
+  .NTimelineContainer2 {
+    margin-bottom: 0px;
+    justify-content: flex-start;
+  }
+  .timelineContainer {
+    margin-left: 50px;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .timelineIndicator {
+    left: -50px !important;
+    width: 50px;
+  }
+  .timelineIndicatorCircle {
+    left: -7.5px;
+  }
+  #scrollRoadmap {
+    padding: 25px !important;
+    margin-bottom: 50px !important;
+  }
+}

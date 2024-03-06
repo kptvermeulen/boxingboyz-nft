@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.238ca715.chunk.css",
+    "main.js": "/static/js/main.b379acaf.chunk.js",
+    "main.js.map": "/static/js/main.b379acaf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2e8e232.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2e8e232.js.map",
+    "static/css/2.ed1298f3.chunk.css": "/static/css/2.ed1298f3.chunk.css",
+    "static/js/2.99c97fcc.chunk.js": "/static/js/2.99c97fcc.chunk.js",
+    "static/js/2.99c97fcc.chunk.js.map": "/static/js/2.99c97fcc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ed1298f3.chunk.css.map": "/static/css/2.ed1298f3.chunk.css.map",
+    "static/css/main.238ca715.chunk.css.map": "/static/css/main.238ca715.chunk.css.map",
+    "static/js/2.99c97fcc.chunk.js.LICENSE.txt": "/static/js/2.99c97fcc.chunk.js.LICENSE.txt",
+    "static/media/AugmentoLogo.9638a679.png": "/static/media/AugmentoLogo.9638a679.png",
+    "static/media/BB1.fa92bceb.png": "/static/media/BB1.fa92bceb.png",
+    "static/media/Black_Hoodie_Mockup.785b1efc.png": "/static/media/Black_Hoodie_Mockup.785b1efc.png",
+    "static/media/HSlogo.5ddd5c2a.png": "/static/media/HSlogo.5ddd5c2a.png",
+    "static/media/NoLimit Marketing.78eb3612.png": "/static/media/NoLimit Marketing.78eb3612.png",
+    "static/media/SkySports.a0465728.png": "/static/media/SkySports.a0465728.png",
+    "static/media/boxignBackground.5290cd55.png": "/static/media/boxignBackground.5290cd55.png",
+    "static/media/channel5.af24429c.png": "/static/media/channel5.af24429c.png",
+    "static/media/close_111152.045daa55.svg": "/static/media/close_111152.045daa55.svg",
+    "static/media/colors.53916633.png": "/static/media/colors.53916633.png",
+    "static/media/header.60ffcc4d.jpeg": "/static/media/header.60ffcc4d.jpeg",
+    "static/media/image2.07a4c5e0.jpeg": "/static/media/image2.07a4c5e0.jpeg",
+    "static/media/mtk-global.278cd331.png": "/static/media/mtk-global.278cd331.png",
+    "static/media/ring.f5e6bd95.png": "/static/media/ring.f5e6bd95.png",
+    "static/media/socialblox.8f8770e5.png": "/static/media/socialblox.8f8770e5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2e8e232.js",
+    "static/css/2.ed1298f3.chunk.css",
+    "static/js/2.99c97fcc.chunk.js",
+    "static/css/main.238ca715.chunk.css",
+    "static/js/main.b379acaf.chunk.js"
+  ]
+}

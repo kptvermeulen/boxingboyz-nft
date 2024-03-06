@@ -1,0 +1,11 @@
+.partnerButton {
+  position: absolute;
+  bottom: -65px;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .partnerButton {
+    display: none;
+  }
+}

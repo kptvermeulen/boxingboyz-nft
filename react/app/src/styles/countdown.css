@@ -1,0 +1,92 @@
+.countDownContainer {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  left: 0px;
+  margin-top: 70px;
+}
+.cdGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cdGridItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 500px;
+  height: 120px;
+  width: 120px;
+  margin: 5px;
+
+  -webkit-box-shadow: 0px 0px 30px 20px rgba(2, 9, 26, 0.315);
+  box-shadow: 0px 0px 30px 20px rgba(2, 9, 26, 0.315);
+}
+.cdAmount {
+  font-family: var(--font);
+  font-style: italic;
+  font-weight: 700;
+  color: white;
+  font-size: 44px;
+}
+.cdLabel {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 12px;
+}
+.discordButton {
+  padding: 15px 30px;
+  margin-top: 30px;
+  display: flex;
+  transition: 0.2s;
+  -webkit-box-shadow: 3px 3px 20px 5px rgba(2, 13, 36, 0.315);
+  box-shadow: 3px 3px 20px 5px rgba(2, 13, 36, 0.315);
+}
+.discordButton svg {
+  height: 30px;
+  margin-right: 20px;
+  width: auto;
+}
+
+.discordButton:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+.discordButton:active {
+  transform: scale(0.7);
+}
+
+.cdGridItem {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 10px;
+}
+.cdGrid {
+  background-color: var(--containerColor);
+  padding: 20px;
+  border-radius: 25px;
+  padding-top: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .countDownContainer {
+    align-items: center;
+    width: 90vw;
+    margin-left: -40px;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .countDownContainer {
+    transform: scale(0.8);
+  }
+}
+@media only screen and (max-width: 300px) {
+  .countDownContainer {
+    transform: scale(0.7);
+  }
+}

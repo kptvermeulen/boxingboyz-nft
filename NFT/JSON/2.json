@@ -1,0 +1,15 @@
+{
+	"name": "#2",
+	"description": "This is a test BoxingBoy",
+	"image": "ipfs://QmS12qJDo1itNxEjwLHHGxgrrPzgSyiugjYFx9degNRUrm/2.png",
+	"attributes": [
+		{
+			"trait_type": "Test Trait",
+			"value": 2
+		},
+		{
+			"trait_type": "Test Trait 2",
+			"value": "Test Value"
+		}
+	]
+}

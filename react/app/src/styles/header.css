@@ -1,0 +1,264 @@
+.header {
+  position: fixed;
+  top: 0px;
+  height: var(--headerHeight);
+  background-color: black;
+  width: 100vw;
+  z-index: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .headerContainer {
+  height: var(--headerHeight);
+  position: relative;
+  padding: 0 10px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  height: 25px;
+  width: auto;
+  border-radius: 0px;
+
+  cursor: pointer;
+}
+.header .headerIcons {
+  height: 20px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  cursor: pointer;
+}
+.header .headerIcons .accountBox {
+  display: flex;
+  flex-direction: row;
+}
+.header .headerIcons .accountBox .userName {
+  color: white;
+  font-family: montserrat;
+  margin: 0 5px 0 8px;
+}
+.headerIcon {
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+}
+.header .headerIconPopup {
+  background-color: #eff0f1;
+  border-radius: 0px 0px 7px 7px;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  min-height: 50px;
+
+  box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.2);
+
+  padding: 5px 10px;
+  z-index: -1;
+
+  cursor: default;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.header .headerIconPopup .HIPHeading {
+  color: black;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.header .headerIconPopup .form {
+  width: 95%;
+}
+.header .headerIconPopup label {
+  color: black;
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 12px;
+}
+.header .headerIconPopup .form input {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 4px 6px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.header .headerIconPopup .form button {
+  padding: 5px;
+  width: 100%;
+}
+
+.header .menuItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: white;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.menuItemK {
+  color: rgb(230, 230, 230);
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-right: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+
+  position: relative;
+}
+.menuItemNotAvailable {
+  opacity: 0.3;
+}
+.header .menuItems .menuItemK svg {
+  width: 15px;
+  height: 20px;
+  margin-right: 7px;
+}
+.menuItemSelected {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.menuItemNotAvailable {
+  cursor: default !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .header .menuItems {
+    display: none !important;
+  }
+  .mobileMenu {
+    display: block !important;
+  }
+  .mobileMenuItems.expanded {
+    margin-top: 0px !important;
+  }
+  .header .logo {
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+  }
+  .header .logo img {
+    max-width: calc(100vw - 200px) !important;
+    height: auto !important;
+    max-height: 32px;
+  }
+  .hIcon {
+    margin: 5px !important;
+  }
+}
+.mobileMenu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: -10px;
+  margin-right: -10px;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  width: 40px;
+  height: 40px;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+  transform: rotate(90deg);
+}
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+.fullContent.expanded {
+  top: 0px;
+}
+
+.mobileMenuItems {
+  margin-top: -160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  transition: 0.5s;
+}
+.mobileMenuItems.expanded {
+  margin-top: -160px;
+}
+
+.headerIcons {
+  display: flex;
+  align-items: center;
+  margin: auto 0px;
+}
+
+.hIcon {
+  color: white;
+  margin: 0px 10px;
+}
+.hIcon svg {
+  height: 25px;
+  width: 25px;
+}
